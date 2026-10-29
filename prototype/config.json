@@ -1,0 +1,25 @@
+{
+  "category": "Commercial Solar Installation",
+  "version": "solar-2026-v1",
+  "mandatory": [
+    {"field": "ontario_electrical_licence", "fail_reason": "Bidder's own Ontario electrical contractor licence is not confirmed."},
+    {"field": "wsib_clearance", "fail_reason": "WSIB clearance is not confirmed."},
+    {"field": "liability_insurance_5m", "fail_reason": "CAD 5 million liability insurance is not confirmed."}
+  ],
+  "limits": [
+    {"field": "price_cad", "max": 260000, "fail_reason": "Price exceeds the CAD 260,000 budget ceiling."},
+    {"field": "completion_weeks", "max": 16, "fail_reason": "Completion time exceeds 16 weeks."}
+  ],
+  "criteria": [
+    {"field": "qualifying_installations", "weight": 30, "direction": "higher_is_better", "missing_reason": "Relevant experience is unknown."},
+    {"field": "price_cad", "weight": 25, "direction": "lower_is_better", "missing_reason": "Total price is unknown."},
+    {"field": "completion_weeks", "weight": 15, "direction": "lower_is_better", "missing_reason": "Completion timeline is unknown."},
+    {"field": "panel_warranty_years", "weight": 7.5, "direction": "higher_is_better", "missing_reason": "Panel warranty is unknown."},
+    {"field": "workmanship_warranty_years", "weight": 7.5, "direction": "higher_is_better", "missing_reason": "Workmanship warranty is unknown."},
+    {"field": "team_approach_items", "weight": 15, "direction": "higher_is_better", "scale_max": 4, "missing_reason": "Team and approach details are unknown."}
+  ],
+  "tie_break": [
+    {"field": "price_cad", "direction": "lower_is_better"},
+    {"field": "completion_weeks", "direction": "lower_is_better"}
+  ]
+}
