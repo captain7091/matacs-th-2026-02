@@ -1,8 +1,8 @@
 # MATACS Technical Assessment
 
-- **Name:** [YOUR FULL NAME]
+- **Name:** Inam Ullah
 - **Assessment reference:** MATACS-TH-2026-02
-- **Actual time spent:** [ENTER ACTUAL TIME SPENT]
+- **Actual time spent:** 45 minutes
 
 ## Deliverables
 
